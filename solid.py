@@ -14,3 +14,4 @@ class Order:
         for i in range(len(self.prices)):
             total += self.quantities[i] * self.prices[i]
         return total
+

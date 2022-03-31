@@ -19,5 +19,6 @@ order.add_item("SSD", 1, 150)
 order.add_item("USB Cable", 2, 5)
 
 print(order.total_price())
-order.pay("debit", "0372846")
+processor = PaymentProcessor()
+processor.pay_debit(order, "0372846")
 
